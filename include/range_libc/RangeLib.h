@@ -30,7 +30,7 @@ Useful Links: https://github.com/MRPT/mrpt/blob/4137046479222f3a71b5c00aee1d5fa8
 
 #include "vendor/lodepng/lodepng.h"
 #include "vendor/distance_transform.h"
-#include "includes/RangeUtils.h"
+#include "range_libc/RangeUtils.h"
 
 #include <stdio.h>      /* printf */
 #include <cstdlib>
@@ -86,7 +86,7 @@ Useful Links: https://github.com/MRPT/mrpt/blob/4137046479222f3a71b5c00aee1d5fa8
 // #define _NO_INLINE 0
 // 
 #if _USE_LRU_CACHE
-#include "includes/lru_cache.h"
+#include "lru_cache.h"
 #endif
 
 // No inline
@@ -112,7 +112,7 @@ Useful Links: https://github.com/MRPT/mrpt/blob/4137046479222f3a71b5c00aee1d5fa8
 	#define CHUNK_SIZE 262144
 	#define CHUNK_THREADS 256
 	#endif
-	#include "includes/CudaRangeLib.h"
+	#include "CudaRangeLib.h"
 #else
 	#define USE_CUDA 0
 #endif
